@@ -23,9 +23,7 @@
   body {
     background-color: theme(colors.neutral-100);
   }
-}
 
-@layer components {
   .outer-container {
     @apply mx-auto;
     max-width: 50rem;
@@ -45,7 +43,9 @@
       max-width: 69.375rem;
     }
   }
+}
 
+@layer components {
   .title-xl {
     font-weight: 300;
     font-size: 2.5rem;
