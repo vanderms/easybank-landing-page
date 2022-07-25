@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::after,
+  *::before {
+    font-family: "Public Sans", sans-serif;
+  }
+
+  :root {
+    --primary: #30c88f;
+    --primary-gradient: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+    --backdrop-gradient: linear-gradient(180deg, #2d314d 0%, rgba(45, 49, 77, 0.0001) 100%);
+    --neutral-50: #fff;
+    --neutral-100: #fafafa;
+    --neutral-200: #f4f5f7;
+    --neutral-500: #9597a5;
+    --neutral-800: #2d314d;
+  }
+
+  body {
+    background-color: theme(colors.neutral-100);
+  }
+}
+
+@layer components {
+  .outer-container {
+    @apply mx-auto;
+    max-width: 50rem;
+  }
+
+  .inner-container {
+    @apply mx-auto;
+    max-width: 87.2%;
+  }
+
+  @media screen(xl) {
+    .outer-container {
+      max-width: 90rem;
+    }
+
+    .inner-container {
+      max-width: 69.375rem;
+    }
+  }
+
+  .title-xl {
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 2.9375rem;
+    letter-spacing: -0.714286px;
+  }
+
+  @media screen(xl) {
+    .title-xl {
+      font-size: 3.5rem;
+      line-height: 4rem;
+      letter-spacing: -1px;
+    }
+  }
+
+  .title-md {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.375rem;
+    letter-spacing: -0.571429px;
+  }
+
+  @media screen(xl) {
+    .title-md {
+      font-size: 2.5rem;
+      line-height: 4rem;
+      letter-spacing: -0.714286px;
+    }
+  }
+
+  .title-sm {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.357143px;
+  }
+
+  @media screen(xl) {
+    .title-sm {
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      letter-spacing: -0.428571px;
+    }
+  }
+
+  .title-xs {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.285714px;
+  }
+
+  .body-xl {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    letter-spacing: -0.234375px;
+  }
+
+  @media screen(xl) {
+    .body-xl {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      letter-spacing: -0.28125px;
+    }
+  }
+
+  .body-md {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    letter-spacing: -0.234375px;
+  }
+
+  @media screen(xl) {
+    .body-md {
+      font-size: 1rem;
+      line-height: 1.625rem;
+      letter-spacing: -0.25px;
+    }
+  }
+
+  .body-sm {
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.203125px;
+  }
+}
