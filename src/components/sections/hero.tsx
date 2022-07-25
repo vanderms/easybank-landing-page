@@ -11,7 +11,7 @@ export function HeroSection() {
     <section aria-labelledby={title}>
       <div className="outer-container overflow-hidden">
         <div className="inner-container grid xl:grid-cols-[27.9375rem,1fr] xl:gap-7">
-          <div className="w-full h-0 relative  pb-[85.9327217%] xl:order-1 xl:pb-[115.2755906%]">
+          <div className="w-full h-0 relative  pb-[85.9327217%] xl:order-1 xl:pb-[122.6771654%]">
             <picture className="absolute bottom-0 left-[calc(50%-50vw)] right-[calc(50%-50vw)] xl:left-0 xl:bottom-auto xl:top-0">
               <source media="(min-width:74rem )" srcSet={BgIntroDesktop} />
               <img
@@ -20,7 +20,7 @@ export function HeroSection() {
                 className=" max-w-none w-full  xl:left-0 xl:w-[50.125rem] xl:h-[43.5rem] bottom-0"
               />
             </picture>
-            <div className="absolute z-10 bottom-0 left-0 right-0 xl:left-[11.4375rem] xl:right-[calc(50%-50vw)]">
+            <div className="absolute z-20 bottom-0 left-0 right-0 xl:left-[11.4375rem] xl:right-[calc(50%-50vw)]">
               <img src={BgImage} alt="" />
             </div>
           </div>
